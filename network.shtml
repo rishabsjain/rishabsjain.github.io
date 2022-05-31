@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MantelMount</title>
+		<link href="mini-default.min.css" rel="stylesheet" type="text/css">
+	</head>
+	<body><div>
+		<header class="sticky row">
+			<div class="col-sm-12 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+			<a href="/" class="logo"><img src="/logo.png" alt="MantelMount"/></a>
+			<a href="/network.shtml" class="button">Network</a>
+			<a href="/device.shtml" class="button">Device</a>
+			<!--<a href="/licenses.html" class="button">Licenses</a>-->
+			</div>
+		</header>
+
+		<div class="container"><div class="row"><div class="col-sm-12 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+			<br/>
+			<h2>Network Information</h2>
+			<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><b>Host Name:</b></div><div class="col-sm-12 col-md-8 fluid"><!--#hostnm--></div></div>
+			<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><b>MAC Address:</b></div><div class="col-sm-12 col-md-8 fluid"><!--#macaddr--></div></div>
+			<br/>
+			<h2>Network Settings</h2>
+			<form method="post" action="localhost:8000/save_network.xml"><fieldset>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><input type="radio" name="dhcp" value="1" <!--#dhcpon--> ></div><div class="col-sm-12 col-md-8 input-group" style="align-self: center; text-align: left;"><label for="dhcp">Determine network settings automatically with DHCP</label></div></div>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><input type="radio" name="dhcp" value="0" <!--#dhcpoff--> ></div><div class="col-sm-12 col-md-8 input-group" style="align-self: center; text-align: left;"><label for="dhcp">Use these network settings:</label></div></div>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><label for="ssid">Wifi SSID:</label></div><div class="col-sm-12 col-md-8 input-group fluid" style="align-self: center;"><input id="ssid" name="netssid" type="text" value="<!--#netssid-->"></div></div>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><label for="ssid">Wifi Password:</label></div><div class="col-sm-12 col-md-8 input-group fluid" style="align-self: center;"><input id="pwd" name="netpwd" type="password" value="<!--#netpwd-->"></div></div>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><label for="ip">IP address:</label></div><div class="col-sm-12 col-md-8 input-group fluid" style="align-self: center;"><input id="ip" name="ip" type="text" value="<!--#netip-->"></div></div>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><label for="gw">Gateway:</label></div><div class="col-sm-12 col-md-8 input-group fluid" style="align-self: center;"><input type="text" id="gw" name="gw" value="<!--#netgw-->"></div></div>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><label for="sn">Subnet:</label></div><div class="col-sm-12 col-md-8 input-group fluid" style="align-self: center;"><input type="text" id="sn" name="sn" value="<!--#netsm-->"></div></div>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><label for="udp">UDP Port:</label></div><div class="col-sm-12 col-md-8 input-group fluid" style="align-self: center;"><input type="text" id="udp" name="udp" value="<!--#netudp-->"></div></div>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><label for="tcp">TCP Port:</label></div><div class="col-sm-12 col-md-8 input-group fluid" style="align-self: center;"><input type="text" id="tcp" name="tcp" value="<!--#nettcp-->"></div></div>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4"></div><div class="col-sm-12 col-md-8 input-group"><input class="secondary" value="Save Settings" type="submit"></div>
+			</fieldset></form>
+		</div></div></div>
+	</div></body>
+</html>

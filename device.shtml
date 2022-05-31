@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MantelMount</title>
+		<link href="mini-default.min.css" rel="stylesheet" type="text/css">
+	</head>
+	<body><div>
+		<header class="sticky row">
+			<div class="col-sm-12 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+			<a href="/" class="logo"><img src="/logo.png" alt="MantelMount"/></a>
+			<a href="/network.shtml" class="button">Network</a>
+			<a href="/device.shtml" class="button">Device</a>
+			<!--<a href="/licenses.html" class="button">Licenses</a>-->
+			</div>
+		</header>
+
+		<div class="container"><div class="row"><div class="col-sm-12 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+			<br/>
+			<h2>Device Configuration</h2>
+			<form method="get">
+			<p>This device is running firmware version <span id="version"></span>(<span id="curfwpage"></span>)<br />
+
+			<span id="myButtons">
+				<span id="updateMsg">&nbsp;</span><br />
+				<a id="remoteButton" class="button secondary" onclick='checkRemoteUpdate(true)'>Check for update</a>
+
+
+				<label>
+				  <a class="button secondary">Local Update</a>
+				  <input type="file" accept=".bin" onchange="localFileChanged(this)" style="position: fixed; top: -100em">
+				</label>
+			</span>
+
+			<div id="progDiv" style="display:none">
+				<div style="text-align:center"><div class="spinner secondary" ></div></div>
+				<div id="progText" style="text-align:center">&nbsp;</div>
+				<progress id="progBar" class="secondary" value="20" max="1000"></progress>
+			</div>
+
+
+			</form>
+			<br><br>
+
+			<form method="post" action="/save_device.xml"><fieldset>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><label class="doc" for="stabrel">Smooth Start Mode:</label></div><div class="col-sm-12 col-md-8 input-group fluid" style="align-self: center;"><select style="width:100%;" id="stabrel" name="stabrel"><option value="0" <!--#nostbrl-->>None</option><option value="1" <!--#stbrl-->>Minimum</option><option value="2" <!--#medstbrl-->>Medium</option><option value="3" <!--#maxstbrl-->>Maximum</option></select></div></div>
+
+
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4"></div><div class="col-sm-12 col-md-8" style="align-self: center; text-align: left;"><h4>Status:</h4></div></div>
+
+
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><label class="doc" for="cazim">Current Swivel (Degrees -L or +R):</label>       </div><div class="col-sm-12 col-md-8 input-group fluid"><input readonly type="text" id="cazim" name="cazim" value="<!--#cazim-->"></div></div>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><label class="doc" for="celev">Current Elevation (Degrees):</label>     </div><div class="col-sm-12 col-md-8 input-group fluid"><input readonly type="text" id="celev" name="celev" value="<!--#celev-->"></div></div>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><label class="doc" for="temp">Temperature Sensor:</label>     </div><div class="col-sm-12 col-md-8 input-group fluid"><input readonly type="text" id="temp" name="temp" value="<!--#temp-->"></div></div>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><label class="doc" for="tvstat">TV Status:</label>            </div><div class="col-sm-12 col-md-8 input-group fluid"><input readonly type="text" id="tvstat" name="tvstat" value="<!--#tvstat-->"></div></div>
+
+
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4"></div><div class="col-sm-12 col-md-8" style="align-self: center; text-align: left;"><h4>ALPS TV Settings: (Auto Lowering Power Sensing):</h4></div></div>				
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><label class="doc" for="enable_alps">Enable ALPS:</label></div><div class="col-sm-12 col-md-8 input-group fluid" style="align-self: center;"><select style="width:100%;" id="enable_alps" name="enable_alps"><option value="1" <!--#enalps-->>Enabled</option><option value="0" <!--#disalps-->>Disabled</option></select></div></div>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><label class="doc" for="curcur">Current TV Power:</label> </div><div class="col-sm-12 col-md-8 input-group fluid" style="align-self: center;"><input readonly type="text" id="curcur" name="curcur" value="<!--#curcur-->">mA</div></div>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><label class="doc" for="curon">TV "On" Power Threshold:</label></div><div class="col-sm-12 col-md-8 input-group fluid" style="align-self: center;"><input type="text" id="curon" name="curon" value="<!--#curon-->">mA</div></div>
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4" style="align-self: center; text-align: right;"><label class="doc" for="curoff">TV "Off" Power Threshold:</label></div><div class="col-sm-12 col-md-8 input-group fluid" style="align-self: center;"><input type="text" id="curoff" name="curoff" value="<!--#curoff-->">mA</div></div>
+
+				<div class="row responsive-label"><div class="col-sm-12 col-md-4"></div><div class="col-sm-12 col-md-8 input-group"><input class="secondary" value="Save Settings" type="submit"></div>
+			</fieldset></form>
+
+		</div></div></div>
+	</div>
+
+	<script src="lib.js"></script>
+	<script>
+		checkRemoteUpdate(false);
+		//refreshVariable(["version", "curfwpage"]);	// one time updates
+//		refreshVariable(["cazim", "celev", "temp", "tvstat", "curcur"], 30000);	// update at 30 second interval
+
+	</script>
+
+	</body>
+</html>

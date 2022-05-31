@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MantelMount</title>
+		<link href="mini-default.min.css" rel="stylesheet" type="text/css">
+
+		<script>
+			// Perform redirect so that default page is device.shtml.  But we still keep all the legacy page just in case the browser doesn't support this...
+			// similar behavior as an HTTP redirect
+			window.location.replace("device.shtml");
+		</script>
+
+	</head>
+	<body></body>
+</html>
