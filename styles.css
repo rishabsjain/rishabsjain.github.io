@@ -30,16 +30,13 @@
 }
 
 .fa-instagram {
-    background: #125688;
-    color: white;
+    color: #125688;
   }
 
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
+.fa-linkedin {
+    color: #007bb5;
+}
 
-  .fa-github {
-    background: black;
-    color: white;
-  }
+.fa-github {
+    color: blue;
+}
