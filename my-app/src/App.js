@@ -10,7 +10,7 @@ import Resume from './pages/resume'
 
 function App() {
   return (
-    <React.Fragment>
+<div style={{height: '100vh'}}>
       <Router>
               <NavBar />
       <Routes>
@@ -19,7 +19,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
         </Routes>
       </Router>
-    </React.Fragment>
+    </div>
   );
 }
 
