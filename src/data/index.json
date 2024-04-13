@@ -1,0 +1,80 @@
+{
+    "skills": [
+      {
+        "id": "1",
+        "src": "./img/product-chain-1.png",
+        "title": "Front-End",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      },
+      {
+        "id": "2",
+        "src": "./img/tag-1.png",
+        "title": "Back-End",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      },
+      {
+        "id": "3",
+        "src": "./img/feather-pen-2.png",
+        "title": "UI & UX Design",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      },
+      {
+        "id": "4",
+        "src": "./img/feather-pen-1.png",
+        "title": "Webflow Development",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      }
+    ],
+    "portfolio": [
+      {
+        "id": "1",
+        "src": "./img/placeholder-image.png",
+        "title": "Ahuse",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+        "link": "View In Github"
+      },
+      {
+        "id": "2",
+        "src": "./img/placeholder-image-1.png",
+        "title": "App Dashboard",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+        "link": "View In Github"
+      },
+      {
+        "id": "3",
+        "src": "./img/placeholder-image-2.png",
+        "title": "Easy Rentn",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+        "link": "View In Github"
+      }
+    ],
+    "travel": [
+      {
+        "id": "1",
+        "count": "5",
+        "src": "./img/Rome.jpg",
+        "description": "One of those places that makes you miss it way too often. I studied abroad here for 3 months and became really familiar with it",
+        "title": "Rome",
+        "link": "https://docs.google.com/document/d/1RdcjNccSGktC8PjAoMC68owEXO50l7xYBKaxjcwi7ho/edit#heading=h.itj8yr5njjj4",
+        "link_name": "Rish's Recommendations"
+      },
+      {
+        "id": "2",
+        "count": "5",
+        "src": "./img/Japan.jpg",
+        "description": "One of the most unique and memorable travel experiences I've ever had. I spent a month traveling around and this was a cumulation of my advice.",
+        "title": "Japan",
+        "link": "https://docs.google.com/document/d/1PVXGxkwPAS2jS7QHya0BkVRfNfdd4X6I0v0JMQLXJ8U/edit#",
+        "link_name": "Rish's Recommendations"
+      },
+      {
+        "id": "3",
+        "count": "5",
+        "src": "./img/SanDiego.jpg",
+        "description": "A place I will always associate with home. I spent over 18 years living here and believe it's one of the best places to visit",
+        "title": "San Diego",
+        "link": "https://docs.google.com/document/d/1q-SuVgerW12IWBVOO7bXDJZ62UzrJIdRia--apN4Ofk/edit#",
+        "link_name": "Rish's Recommendations"
+      }
+    ]
+  }
