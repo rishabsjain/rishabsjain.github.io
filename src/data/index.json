@@ -52,26 +52,29 @@
       {
         "id": "1",
         "count": "5",
-        "src": "./img/avatar-image.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-        "author_name": "Dianne Russel",
-        "author_designation": "Starbucks"
+        "src": "./img/Rome.jpg",
+        "description": "One of those places that makes you miss it way too often. I studied abroad here for 3 months and became really familiar with it",
+        "title": "Rome",
+        "link": "https://docs.google.com/document/d/1RdcjNccSGktC8PjAoMC68owEXO50l7xYBKaxjcwi7ho/edit#heading=h.itj8yr5njjj4",
+        "link_name": "Rish's Recommendations"
       },
       {
         "id": "2",
         "count": "5",
-        "src": "./img/avatar-image-1.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-        "author_name": "Kristin Watson",
-        "author_designation": "Louis Vuitton"
+        "src": "./img/Japan.jpg",
+        "description": "One of the most unique and memorable travel experiences I've ever had. I spent a month traveling around and this was a cumulation of my advice.",
+        "title": "Japan",
+        "link": "https://docs.google.com/document/d/1PVXGxkwPAS2jS7QHya0BkVRfNfdd4X6I0v0JMQLXJ8U/edit#",
+        "link_name": "Rish's Recommendations"
       },
       {
         "id": "3",
         "count": "5",
-        "src": "./img/avatar-image-2.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-        "author_name": "Kathryn Murphy",
-        "author_designation": "McDonald's"
+        "src": "./img/SanDiego.jpg",
+        "description": "A place I will always associate with home. I spent over 18 years living here and believe it's one of the best places to visit",
+        "title": "San Diego",
+        "link": "https://docs.google.com/document/d/1q-SuVgerW12IWBVOO7bXDJZ62UzrJIdRia--apN4Ofk/edit#",
+        "link_name": "Rish's Recommendations"
       }
     ]
   }
