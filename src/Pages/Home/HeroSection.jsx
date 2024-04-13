@@ -10,7 +10,7 @@ export default function HeroSection() {
                         </span>{" "}
                     </h1>
                     <p className="hero--section-description">
-                         This was a website I made mainly around for the various travel guides I make
+                         This was a website I made for the various travel guides I make
                     
                     </p>
                 </div>
