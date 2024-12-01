@@ -13,7 +13,7 @@ export default function AboutMe() {
             I currently work at Palantir Technologies as a Forward Deployed Software Engineer. Previously, I worked at Appfolio as a Software Engineer Intern.
             </p>
             <p className="hero--section-description">
-              I really enjoy traveling and these guides were a way for me to centralize all the highlights from these beautiful places.
+              I'm lucky enough to have traveled around a good amount, so these guides are my way of capturing my recommendendations for my friends, family, and others to read. 
             </p>
           </div>
         </div>
