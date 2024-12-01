@@ -75,6 +75,15 @@
         "title": "San Diego",
         "link": "https://docs.google.com/document/d/1Hhdn7NgfaqERqJIkYIEkl-Ig3Y6jLc1jAheLcZ__Bd4/edit?usp=sharing",
         "link_name": "San Diego Guide"
+      },
+      {
+        "id": "4",
+        "count": "5",
+        "src": "./img/WashingtonDC.jpg",
+        "description": "The place where I currently live and one of the cities that is underappreciated. More to come soon...",
+        "title": "(WIP) Washington D.C.",
+        "link": "https://docs.google.com/document/d/1XsQBSMlTXqtqD3G5nWLU9tIpcgi4p_1olqZp90n8Qlk/edit?usp=sharing",
+        "link_name": "D.C. Guide"
       }
     ]
   }
