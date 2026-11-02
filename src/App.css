@@ -609,6 +609,7 @@ input[type="checkbox"] {
   }
   .hero--section--title,
   .hero--section-description,
+  .skills-section--heading,
   .footer--content {
     text-align: center;
   }
@@ -749,6 +750,17 @@ input[type="checkbox"] {
 
   .nav__hamburger.active :nth-child(3) {
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about--section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .skills-section--heading {
+    font-size: 30px;
+    line-height: 36px;
   }
 }
 
