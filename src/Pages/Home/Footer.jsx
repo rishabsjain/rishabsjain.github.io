@@ -33,7 +33,7 @@ function Footer() {
                 to="AboutMe"
                 className="text-md"
               >
-                About Me
+                About
               </Link>
             </li>
             <li>

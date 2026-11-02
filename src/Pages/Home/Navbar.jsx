@@ -72,7 +72,7 @@ function Navbar() {
               to="AboutMe"
               className="navbar--content"
             >
-              About Me
+              About
             </Link>
           </li>
           <li>
