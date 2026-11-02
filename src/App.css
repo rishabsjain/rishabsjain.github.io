@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: "Roboto", sans-serif;
   -moz-osx-font-smoothing: "Roboto", sans-serif;
   font-style: normal;
+  background-color: #ffffff;
 }
 h1,
 h2,
@@ -152,7 +153,7 @@ h2 {
 /* Navbar Style Start */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 15px 85.333px;
   background: var(--white);
@@ -314,6 +315,7 @@ h2 {
   align-items: center;
   gap: 114.6px;
   grid-template-columns: repeat(2, 1fr);
+  background-color: var(--bg-shade);
 }
 .about--section--img > img {
   width: 100%;
@@ -638,9 +640,10 @@ input[type="checkbox"] {
     padding-bottom: 70px;
   }
   .about--section {
+    flex-direction: column-reverse;
     gap: 20px;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 100px;
+    padding-bottom: 70px;
   }
   .travel--section--card {
     padding: 25px;
@@ -698,6 +701,10 @@ input[type="checkbox"] {
   .nav__hamburger {
     display: flex;
     z-index: 200;
+  }
+  .navbar {
+    box-sizing: border-box;
+    min-height: 72px;
   }
   .navbar--items {
     display: flex;
